@@ -1,0 +1,29 @@
+version: "3.8"
+services:
+    app:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        environment: 
+            - PORT=8000
+            - DB_CONN=sqlite:///winecellar.db
+        ports:
+            - 8000:8000
+        expose:
+            - "8000"
+        volumes:
+            - ".:/app"
+    board:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        environment: 
+            - PORT=8069
+        depends_on:
+            - app
+        links:
+            - "app:app"
+        ports:
+            - 8069:8069
+        command: python board.py
+        

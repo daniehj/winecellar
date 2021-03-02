@@ -1,0 +1,13 @@
+fastapi
+gunicorn
+pydantic
+pymysql
+sqlalchemy
+starlette
+uvicorn
+uvloop
+httptools
+requests
+pandas
+dash
+jupyter_dash
