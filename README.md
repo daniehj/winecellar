@@ -4,6 +4,6 @@
 
 ## Dashboard for temperatures
 
-## Tizen APP for refrigirator
+## Tizen APP for refrigerator
 
 ## DB app for wines in the cellar
