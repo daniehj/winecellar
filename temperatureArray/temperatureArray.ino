@@ -18,7 +18,7 @@ const char* ssid     = "SSID";
 const char* password = "PASSWORD";
 
 // REPLACE with your Domain name and URL path or IP address with path
-const char* serverName = "http://18.189.1.225:8000/records/";
+const char* serverName = "http://arctanconsulting.no:8000/records/";
 
 WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP, NTP_ADDRESS, NTP_OFFSET, NTP_INTERVAL);
@@ -110,5 +110,5 @@ void loop() {
     Serial.println("WiFi Disconnected");
   }
   //Send an HTTP POST request every 30 seconds
-  delay(10000);  
+  delay(30000);  
 }
