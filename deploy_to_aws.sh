@@ -1,5 +1,4 @@
 #!/bin/bash
-
 echo 'Starting to Deploy...'
 ssh ec2-user@ip-172-31-47-89 " sudo docker image prune -f
         cd PROG/winecellar/API
