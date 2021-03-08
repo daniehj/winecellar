@@ -19,4 +19,4 @@ jobs:
           name: id_rsa
           known_hosts: ${{ secrets.KNOWN_HOSTS }}
       - name: rsync over ssh
-        run: ./deploy_to_aws.sh
+        run: ls -la &&./deploy_to_aws.sh
