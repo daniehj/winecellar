@@ -1,5 +1,5 @@
 echo 'Starting to Deploy...'
-ssh ubuntu@52.38.40.75 " sudo docker image prune -f
+ssh ec2-user@ip-172-31-47-89 " sudo docker image prune -f
         sudo docker-compose down
         git fetch origin
         git reset --hard origin/develop  &&  echo 'You are doing well'
